@@ -3,7 +3,11 @@ Common Errors:
 # MisMatch Twig versions:
 
 Error: 
-	PHP Fatal error: Declaration of JMS\TranslationBundle\Twig\NormalizingNodeVisitor::enterNode(Twig_NodeInterface $node, Twig_Environment $env) must be compatible with Twig_NodeVisitorInterface::enterNode(Twig_Node $node, Twig_Environment $env) in /home/devsyssim/src/vendor/jms/translation-bundle/JMS/TranslationBundle/Twig/NormalizingNodeVisitor.php on #line 29
+	PHP Fatal error: Declaration of JMS\TranslationBundle\Twig\NormalizingNodeVisitor::enterNode(Twig_NodeInterface $node, 
+	Twig_Environment $env) must be compatible with Twig_NodeVisitorInterface::enterNode(Twig_Node $node, Twig_Environment 
+	$env) in /home/devsyssim/src/vendor/jms/translation-bundle/JMS/TranslationBundle/Twig/NormalizingNodeVisitor.php on 
+	#line 29
 
 Explanation/Solution:
-	Mismatch in twig version in Symfony 2.^ throws above error. In my case, In place of version 1.31, i installed 2.^, which resulted the error. Reverting back to previous version solved the issue.
+	Mismatch in twig version in Symfony 2.^ throws above error. In my case, In place of version 1.31, i installed 2.^, 
+	which resulted the error. Reverting back to previous version solved the issue.
