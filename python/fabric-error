@@ -1,0 +1,26 @@
+
+
+/*
+  Error during deployment using python fabric
+*/
+
+Error:
+	No handlers could be found for logger paramiko
+
+Solution:
+	Most of the time, it complains for conflicting public keys. there could be some other reasons too. based on solutions; i used:
+
+	If any of these are installed:	
+	- pip uninstall paramiko
+	- pip uninstall fabric
+	- pip uninstall cryptography
+
+	Reinstall:
+	- pip install paramiko
+	- pip install fabric
+	- pip install crpytopgraphy (it might have installed with fabric package, just be sure)
+	- pip install paramiko --upgrade
+	- pip install fabric --upgrade
+
+Reboot system. Hopefully, it should help.
+Cheers!
