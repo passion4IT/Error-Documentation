@@ -1,0 +1,25 @@
+### Node Installation steps on Mac:
+- Installation with Brew:
+    - brew update
+    - brew install node
+
+- Upgrade Node
+    - brew update
+    - brew upgrade node
+
+- Error on installation of npm on mac
+    - Error: module.js:487
+    throw err;
+    ^
+
+    Error: Cannot find module 'semver'
+    
+    - Solution
+        - brew update
+        - brew uninstall node
+        - brew install node
+        - sudo chmod -R 777 /usr/local/lib
+        - brew install 
+        - brew postinstall node
+        
+ This has worked for me !
