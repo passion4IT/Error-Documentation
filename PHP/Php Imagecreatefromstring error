@@ -1,0 +1,8 @@
+## Symfony Error:
+# php missing dependency:
+- Error: Uncaught PHP Exception 
+  Symfony\Component\Debug\Exception\UndefinedFunctionException: Attempted to call function "imagecreatefromstring"
+- Solution: php extension gd is missing from required dependencies, therefore, php-gd extension has to be installed.
+- Command: apt-get install php-gd (for specific php version e.g php version 5 => apt-get install php5-gd)
+
+  
