@@ -1,0 +1,3 @@
+### Laravel error documentation
+- Token Mismatchexception during laravel dusk testing:
+    - solution: use WithoutMiddleWare in class
