@@ -1,0 +1,3 @@
+### icu4c errors:
+- error: configure: error: Unable to detect ICU prefix or no failed. Please verify ICU install prefix and make sure icu-config works.
+    - solution: brew install icu4c
