@@ -1,3 +1,20 @@
 ### Laravel error documentation
 - Token Mismatchexception during laravel dusk testing:
     - solution: use WithoutMiddleWare in class
+
+
+### Laravel dusk error:
+- DuskServiceProvider missing:
+   - Error: The currently authenticated user is not who was expected.
+            Failed asserting that null is identical to Array &0 (
+                'id' => 3
+                'className' => 'App\User'
+            ).
+   - solution: Go to `app\Providers\AppServiceProvider.php`
+     and add `use Laravel\Dusk\DuskServiceProvider;`
+     public function register()
+    {
+        if ($this->app->environment('local', 'testing')) {
+            $this->app->register(DuskServiceProvider::class);
+        }
+    }
