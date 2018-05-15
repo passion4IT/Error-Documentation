@@ -21,3 +21,8 @@
    
    - permission issue with laravel.log
     `chmod -R 777 storage/`
+### Call to a member function addEagerConstraints() on null
+ - Error: missing return statement in declaration of relation in model
+ error case: public function something() {
+    $this->belongsTo(Model::class);
+ }
